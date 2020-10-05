@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    [SerializeField] public float playerSpeed = 5;
+    [SerializeField] public float playerSpeed;
     Rigidbody playerRB;
 
     private void Start()
@@ -17,6 +17,7 @@ public class playerController : MonoBehaviour
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
-        playerRB.velocity = new Vector3 (moveX, playerRB.velocity.y, moveZ) * playerSpeed * Time.deltaTime;
+        Vector3 Movement;
+        transform.Translate(moveX * playerSpeed * Time.deltaTime, playerRB.velocity.y * Time.deltaTime, moveZ * playerSpeed * Time.deltaTime);
     }
 }

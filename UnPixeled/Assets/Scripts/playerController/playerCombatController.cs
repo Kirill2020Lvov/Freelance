@@ -9,7 +9,7 @@ public class playerCombatController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            
         }
     }
     void Start()
