@@ -55,10 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\playerController\playerInventory.cs" />
-     <Compile Include="Assets\Scripts\playerController\playerCombatController.cs" />
-     <Compile Include="Assets\Scripts\playerController\playerHealthStats.cs" />
-     <Compile Include="Assets\Scripts\playerController\playerController.cs" />
+     <Compile Include="Assets\Scripts\Player Controller\playerInventory.cs" />
+     <Compile Include="Assets\Scripts\Player Controller\playerCombatController.cs" />
+     <Compile Include="Assets\Scripts\Player Controller\playerHealthStats.cs" />
+     <Compile Include="Assets\Scripts\Player Controller\playerController.cs" />
+     <Compile Include="Assets\Scripts\Player Controller\cameraFollow.cs" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>C:/Users/lite-/Google Drive/Files/My GameDev/Unpixeled Project Folder/UnPixeled/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
