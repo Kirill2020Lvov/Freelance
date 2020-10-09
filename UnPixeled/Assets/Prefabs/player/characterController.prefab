@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a05e4a3a8fa8642b6daf0a7ff09a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUI: {fileID: 6701878201509437295, guid: 80abd2c7ac3ebc64b817ae55cbbbc366, type: 3}
+  damageText: {fileID: 2662551291732197785, guid: 0dac89b3bea96124498ad3b7078d833b, type: 3}
   health: 100
   expirience: 0
   energy: 100

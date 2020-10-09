@@ -15,6 +15,7 @@ public class meleeEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         player = GameManager.instance.player;
         npc = GetComponent<NavMeshAgent>();
     }
@@ -34,14 +35,6 @@ public class meleeEnemy : MonoBehaviour
             }
         }
 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Weapon")
-        {
-            Destroy(gameObject);
-        }
     }
 
     void OnDrawGizmosSelected ()
