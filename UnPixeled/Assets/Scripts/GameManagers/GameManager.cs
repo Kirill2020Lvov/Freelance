@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public playerController player;
+    public GUIManager GUI;
+
+
+
     #region Singleton
 
     public static GameManager instance;
@@ -20,10 +25,13 @@ void Awake ()
       }
   
       DontDestroyOnLoad(gameObject);
+
+        player = FindObjectOfType<playerController>();
+        GUI = FindObjectOfType<GUIManager>();
   }
 
     #endregion
 
-    public GameObject player ;
-    public GameObject GUI;
+
+    
 }
