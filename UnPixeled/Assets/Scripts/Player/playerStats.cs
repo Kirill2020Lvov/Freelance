@@ -7,7 +7,7 @@ using UnityEngine.Rendering;
 
 public class playerStats : MonoBehaviour
 {
-    GameObject player;
+    playerController player;
     GUIManager GUI;
     public TextMesh damageText;
 

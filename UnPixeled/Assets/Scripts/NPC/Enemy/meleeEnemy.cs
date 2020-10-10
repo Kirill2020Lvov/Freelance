@@ -9,13 +9,12 @@ public class meleeEnemy : MonoBehaviour
     public float lookRadius = 100.0f;
     public float damage = 1;
 
-    GameObject player;
+    playerController player;
     NavMeshAgent npc;
 
     // Start is called before the first frame update
     void Start()
     {
-        
         player = GameManager.instance.player;
         npc = GetComponent<NavMeshAgent>();
     }

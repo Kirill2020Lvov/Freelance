@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class camera : MonoBehaviour
 {
-    GameObject player;
+    playerController player;
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
 
-    private void Awake()
-    {
-        player = GameManager.instance.player;
-        
-    }
-
     private void Start()
     {
+        player = GameManager.instance.player;
     }
 
     private void LateUpdate()
