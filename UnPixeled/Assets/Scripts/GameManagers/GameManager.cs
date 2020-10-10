@@ -8,15 +8,22 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    void Awake()
-    {
-        instance = this;
-    }
+void Awake ()
+  {
+      if (instance == null) 
+      {
+          instance = this;
+      } else if (instance != this) 
+      {
+          Destroy(gameObject);
+          return;
+      }
+  
+      DontDestroyOnLoad(gameObject);
+  }
 
     #endregion
 
-    public GameObject player;
-    public GameObject playerCamera;
-
+    public GameObject player ;
     public GameObject GUI;
 }
